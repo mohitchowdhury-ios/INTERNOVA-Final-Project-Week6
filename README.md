@@ -82,51 +82,32 @@ This internship reinforced the immense power of vanilla web technologies. Buildi
 
 ---
 
-## 🔧 Task 1: Git & Version Control Workflow Reference
+## 💻 How to Run Locally
 
-This project demonstrates disciplined Git version control practices:
+Anyone evaluating or running this project locally can follow these steps:
 
-1. **Initialize & Setup:**
+1. **Clone this repository:**
    ```bash
-   git init
-   git config user.name "Mohit Chowdhury"
-   git config user.email "your-email@example.com"
+   git clone https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6.git
    ```
 
-2. **Stage & Commit:**
+2. **Navigate into the project directory:**
    ```bash
-   git status
-   git add .
-   git commit -m "feat: complete final responsive website capstone - DevPulse"
+   cd INTERNOVA-Final-Project-Week6
    ```
 
-3. **Log & History Verification:**
-   ```bash
-   git log --oneline
-   ```
+3. **Open the application:**
+   - Double-click `index.html` to open it in your default web browser, or open it directly via:
+     ```bash
+     # Windows
+     start index.html
 
-4. **Remote Linking & Push:**
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6.git
-   git push -u origin main
-   ```
+     # macOS
+     open index.html
 
----
+     # Linux
+     xdg-open index.html
+     ```
 
-## 🌐 Task 5: GitHub Pages Deployment Guide
-
-To deploy this project to live production:
-
-1. Go to your repository on GitHub:
-   `https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6`
-2. Click on the **Settings** tab.
-3. On the left sidebar under the "Code and automation" section, click **Pages**.
-4. Under **Build and deployment**:
-   - **Source:** Select `Deploy from a branch`.
-   - **Branch:** Select `main` & folder `/ (root)`.
-   - Click **Save**.
-5. Wait 1–2 minutes. GitHub will provide your live deployment URL:
-   👉 **`https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/`**
-6. Open the URL to verify that all styles, scripts, modals, and responsive layouts function cleanly online!
-
+4. **No Build Step Required:**
+   - The application runs purely on native Vanilla JavaScript, HTML5, and CSS3. No Node.js servers, npm packages, or build tools are needed!
