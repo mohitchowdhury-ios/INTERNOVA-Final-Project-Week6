@@ -2,6 +2,7 @@
 
 A fully responsive, interactive web application engineered using **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)**, deployed on **GitHub Pages**. This project represents the final capstone submission for the **6-Week Web Development Internship (Week 6 Final Project)**.
 
+- **🌐 Live Demo (GitHub Pages):** [https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/](https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/)
 - **📁 GitHub Repository:** [https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6](https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6)
 
 ---
@@ -15,7 +16,7 @@ A fully responsive, interactive web application engineered using **HTML5**, **CS
 
 ---
 
-## 🛠️ Repository & Directory Architecture (Task 2)
+## 🛠️ Repository & Directory Architecture
 
 ```text
 INTERNOVA-Final-Project-Week6/
@@ -32,15 +33,15 @@ INTERNOVA-Final-Project-Week6/
 
 ---
 
-## 🚀 Key Technical Implementation (Tasks 3 & 4)
+## 🚀 Key Technical Implementation
 
-### 1. Semantic HTML5 & CSS Architecture (Task 3: 30 Marks)
+### 1. Semantic HTML5 & CSS Architecture
 - **Semantic Structure:** Organized using native HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<dialog>`).
 - **Modern Box Model & Layouts:** Built with CSS Grid and Flexbox for fluid multi-column cards, interactive toolbars, and responsive headers.
 - **Responsive Media Queries:** Tailored responsive breakpoints for desktop (>1024px), tablet (768px–1024px), and mobile devices (<768px and <480px) including a collapsible mobile navigation drawer.
 - **Dual Theme Engine:** Dark and Light mode powered by CSS custom properties (`--bg-body`, `--text-main`, `--primary-glow`), toggled with a single click and persisted via `localStorage`.
 
-### 2. JavaScript Interactivity & Algorithms (Task 4: 15 Marks)
+### 2. JavaScript Interactivity & Algorithms
 - **Real-Time Reactive Search:** Instant input listener filtering title, descriptions, and tags.
 - **Multi-Category Track Filtering:** Filter pills for Frontend, Backend, DevOps & Cloud, AI & Machine Learning, and UI/UX Design.
 - **Multi-Directional Sorting:** Sort by Featured status, Rating (Highest to Lowest), Alphabetical title (A–Z), and Newly added timestamp.
@@ -52,7 +53,7 @@ INTERNOVA-Final-Project-Week6/
 
 ---
 
-## 📝 Task 6: Final Project Documentation & Reflection
+## 📝 Project Documentation & Reflection
 
 ### Project Overview
 **DevPulse** was conceived and developed as the capstone project of this 6-week web development internship. It addresses a common challenge among self-taught engineers and interns: discovering organized, vetted, and high-impact developer documentation without cognitive overload. The platform delivers an engaging user experience through real-time search, category classification, dynamic bookmarking, and community contribution tools—all executing purely client-side with zero external library overhead.
@@ -70,15 +71,15 @@ The project demonstrates end-to-end web fundamentals. Semantic HTML5 provides ac
 - Engineered a centralized `getFilteredResources()` unidirectional pipeline that applies sequential filter, search, and sort algorithms against application state.
 - Designed reusable input validation routines that update descriptive error spans beneath form controls before triggering notifications.
 
-### Key Learnings
-This internship reinforced the immense power of vanilla web technologies. Building DevPulse without heavy front-end frameworks deepened my understanding of DOM lifecycles, event delegation, semantic web accessibility (ARIA roles), Git version control workflows, and deploying production-ready assets to GitHub Pages.
+### What I Learned
+Throughout this 6-week internship and final capstone project, I gained extensive hands-on experience with modern web development. I learned how to build production-grade web applications from scratch without relying on front-end frameworks, deepened my understanding of DOM manipulation and event lifecycles, practiced semantic accessibility standards, mastered Git version control workflows, and learned how to deploy and maintain live projects on GitHub Pages.
 
 ### Future Improvements
 1. Integrating GitHub REST API to fetch live repository statistics (stars, forks, open issues) dynamically.
 2. Adding a user voting system for community-driven resource curation.
 3. Incorporating interactive skill roadmaps with printable progress checklists.
 
-*(Word Count: 442 words — strictly within the 400–500 word limit)*
+
 
 ---
 
@@ -109,5 +110,13 @@ Anyone evaluating or running this project locally can follow these steps:
      xdg-open index.html
      ```
 
-4. **No Build Step Required:**
-   - The application runs purely on native Vanilla JavaScript, HTML5, and CSS3. No Node.js servers, npm packages, or build tools are needed!
+4. **Zero Dependencies:**
+   - The application runs purely on native Vanilla JavaScript, HTML5, and CSS3. No Node.js server or build tools needed.
+
+---
+
+## 🌐 Live Deployment
+
+- **Live URL:** [https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/](https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/)
+- **Hosted on:** GitHub Pages (deployed from `main` branch, root directory)
+
