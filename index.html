@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevPulse - Modern Developer Resources & Career Hub</title>
+  <meta name="description" content="DevPulse is a comprehensive, responsive web platform curating tools, career tracks, and interactive learning resources for software engineers.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts for sleek typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- =========================================================================
+       Navigation Header
+       ========================================================================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand-logo" aria-label="DevPulse Home">
+        <span class="logo-symbol">⚡</span>
+        <span class="logo-text">Dev<span class="highlight">Pulse</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#resources" class="nav-link">Explore Hub</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Bookmark Counter Pill -->
+        <button id="bookmarkDrawerBtn" class="action-btn pill-btn" title="View Bookmarked Resources">
+          🔖 <span class="btn-text">Bookmarks</span>
+          <span id="bookmarkCountBadge" class="counter-badge">0</span>
+        </button>
+
+        <!-- Dark/Light Mode Switcher -->
+        <button id="themeToggleBtn" class="icon-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle theme">
+          <span id="themeToggleIcon">🌙</span>
+        </button>
+
+        <!-- Submit Resource CTA -->
+        <button id="openSubmitModalBtn" class="btn btn-primary" title="Contribute a developer resource">
+          ➕ <span class="btn-text">Add Resource</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Content Area
+       ========================================================================= -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">🚀 The Ultimate Developer Knowledge Engine</div>
+          <h1 class="hero-title">Level Up Your Engineering Skills with <span class="gradient-text">DevPulse</span></h1>
+          <p class="hero-description">
+            Discover curated documentation, interactive tutorials, roadmaps, and career assets. Bookmark favorite tools, contribute new community gems, and elevate your coding journey.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#resources" class="btn btn-primary btn-lg">Explore Resources</a>
+            <button id="heroDemoBtn" class="btn btn-secondary btn-lg">View Platform Tour</button>
+          </div>
+
+          <!-- Live Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number" id="statResourceCount">24+</span>
+              <span class="stat-label">Curated Tools</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">12k+</span>
+              <span class="stat-label">Active Engineers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">99.9%</span>
+              <span class="stat-label">Free & Open</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-mockup">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">devpulse-cli ~ bash</span>
+            </div>
+            <div class="terminal-body">
+              <p class="code-line"><span class="cmd-prompt">$</span> <span class="cmd-exec">devpulse</span> fetch --trending</p>
+              <p class="code-output success-text">✔ Connected to DevPulse Resource Catalog v2.4</p>
+              <p class="code-output">📦 [1] TypeScript Pro Design Patterns (⭐ 4.9)</p>
+              <p class="code-output">📦 [2] Next.js 15 Full-Stack Blueprint (⭐ 5.0)</p>
+              <p class="code-output">📦 [3] Docker & Kubernetes DevOps Pipeline (⭐ 4.8)</p>
+              <p class="code-line"><span class="cmd-prompt">$</span> <span class="cmd-exec">git</span> commit -m "capstone: internship complete"</p>
+              <p class="code-output highlight-text">[main 7e8910a] 100% responsive & deployed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Value Proposition Section -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="subheading">Engineered For Growth</span>
+          <h2 class="section-title">Everything Developers Need in One Place</h2>
+          <p class="section-desc">DevPulse combines lightning-fast client-side filtering, rich metadata cards, and seamless bookmark persistence.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon-box">⚡</div>
+            <h3>Real-Time Instant Search</h3>
+            <p>Filter hundreds of programming tools, guides, and repositories in milliseconds with client-side reactive algorithms.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-box">🏷️</div>
+            <h3>Multi-Category Sorting</h3>
+            <p>Switch seamlessly between Frontend, Backend, DevOps, UI/UX, and AI/ML with smart category filters and rating sorting.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-box">💾</div>
+            <h3>Offline Local Storage</h3>
+            <p>Your saved bookmarks and user-submitted resources persist securely in your browser's local cache across sessions.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-box">📱</div>
+            <h3>100% Fluid Responsive</h3>
+            <p>Crafted with mobile-first CSS Grid and Flexbox to guarantee an immaculate user experience on phones, tablets, and 4K displays.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Interactive Catalog & Hub Section -->
+    <section class="section resources-section" id="resources">
+      <div class="container">
+        <div class="section-heading">
+          <div class="heading-left">
+            <span class="subheading">Knowledge Directory</span>
+            <h2 class="section-title">Explore Developer Resources</h2>
+            <p class="section-desc">Search, filter by technology track, save bookmarks, or inspect detailed metadata.</p>
+          </div>
+          <div class="heading-right">
+            <span id="resultsCounter" class="badge-status">Showing 10 of 10 resources</span>
+          </div>
+        </div>
+
+        <!-- Filter & Search Control Panel -->
+        <div class="filter-panel">
+          <!-- Live Text Search -->
+          <div class="search-field-wrapper">
+            <span class="search-icon">🔍</span>
+            <input 
+              type="text" 
+              id="resourceSearchInput" 
+              class="search-input" 
+              placeholder="Search by title, tag, or description..."
+              aria-label="Search resources"
+            >
+            <button id="clearSearchBtn" class="clear-input-btn" title="Clear search query" style="display: none;">✕</button>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="category-pills" id="categoryFilterGroup" role="tablist" aria-label="Category Filters">
+            <button class="pill-filter active" data-category="all" role="tab" aria-selected="true">All Tracks</button>
+            <button class="pill-filter" data-category="frontend" role="tab" aria-selected="false">Frontend</button>
+            <button class="pill-filter" data-category="backend" role="tab" aria-selected="false">Backend</button>
+            <button class="pill-filter" data-category="devops" role="tab" aria-selected="false">DevOps & Cloud</button>
+            <button class="pill-filter" data-category="ai" role="tab" aria-selected="false">AI & ML</button>
+            <button class="pill-filter" data-category="design" role="tab" aria-selected="false">UI/UX Design</button>
+          </div>
+
+          <!-- Sorting Dropdown & View Layout Toggle -->
+          <div class="control-row-secondary">
+            <div class="sort-selector-wrap">
+              <label for="sortBySelect" class="sort-label">Sort By:</label>
+              <select id="sortBySelect" class="sort-select">
+                <option value="featured">Featured First</option>
+                <option value="rating-desc">Highest Rated (⭐)</option>
+                <option value="title-asc">Title (A - Z)</option>
+                <option value="newest">Newly Added</option>
+              </select>
+            </div>
+
+            <div class="view-toggles">
+              <button id="viewGridBtn" class="view-btn active" title="Grid View" aria-label="Switch to grid view">⊞ Grid</button>
+              <button id="viewListBtn" class="view-btn" title="List View" aria-label="Switch to list view">☰ List</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource Cards Grid Container -->
+        <div id="resourceGrid" class="resource-grid">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+
+        <!-- Empty Results State -->
+        <div id="emptyCatalogState" class="empty-results-box" style="display: none;">
+          <div class="empty-icon">🔎</div>
+          <h3>No matching resources found</h3>
+          <p>Try refining your search keyword or clearing the active category filters.</p>
+          <button id="resetFiltersBtn" class="btn btn-secondary mt-3">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="subheading">Community Endorsements</span>
+          <h2 class="section-title">Loved by Developers Worldwide</h2>
+          <p class="section-desc">Read how DevPulse has empowered software engineers and learners.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"DevPulse was my secret weapon during my web dev internship. Finding high-quality architecture blueprints in one click saved me hours of searching."</p>
+            <div class="author-meta">
+              <div class="author-avatar">👨‍💻</div>
+              <div>
+                <h4 class="author-name">Alex Rivera</h4>
+                <p class="author-role">Full-Stack Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"The bookmarking system and responsive UI are flawless. The dark mode is super comfortable for late-night coding sessions."</p>
+            <div class="author-meta">
+              <div class="author-avatar">👩‍💻</div>
+              <div>
+                <h4 class="author-name">Sophia Chen</h4>
+                <p class="author-role">Frontend Specialist</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"An inspiring capstone project! The code is clean, semantic HTML5, zero external libraries, and runs blazingly fast on GitHub Pages."</p>
+            <div class="author-meta">
+              <div class="author-avatar">🚀</div>
+              <div>
+                <h4 class="author-name">Marcus Vance</h4>
+                <p class="author-role">DevOps Architect</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section faq-section" id="faq">
+      <div class="container max-w-md">
+        <div class="section-heading text-center">
+          <span class="subheading">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Interactive accordion demonstrating dynamic JavaScript DOM toggling.</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Is DevPulse completely free to use?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Yes! DevPulse is 100% free and open-source. All curated resources, roadmaps, and cheat sheets can be accessed with zero subscriptions.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Are my saved bookmarks preserved across browser reloads?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Yes. DevPulse leverages the browser's <code>localStorage</code> API to ensure your bookmarked guides and custom submitted entries persist seamlessly on your machine.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Can I add my own resources to the directory?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Absolutely! Click the <strong>Add Resource</strong> button in the header or floating banner to submit a new resource. The application validates your input and immediately inserts it into the interactive catalog.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How is this application deployed?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>This project is deployed using <strong>GitHub Pages</strong> directly from the public GitHub repository. It requires zero server runtimes, making it blazingly fast and globally accessible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Feedback Form Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container max-w-md">
+        <div class="card contact-card">
+          <div class="card-header text-center">
+            <span class="subheading">Get in Touch</span>
+            <h2 class="section-title">Send Us Feedback</h2>
+            <p class="section-desc">Have a suggestion or partnership inquiry? Drop a message below.</p>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name *</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. John Doe" required>
+              <span class="field-error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email Address *</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="e.g. john@example.com" required>
+              <span class="field-error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <select id="contactSubject" class="form-input">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Resource Suggestion">Resource Suggestion</option>
+                <option value="Bug Report">Bug Report</option>
+                <option value="Internship Feedback">Internship Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message *</label>
+              <textarea id="contactMessage" class="form-input textarea" rows="4" placeholder="Write your thoughts here..." required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">🚀 Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer Section
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="#top" class="brand-logo footer-logo">
+          <span class="logo-symbol">⚡</span>
+          <span class="logo-text">Dev<span class="highlight">Pulse</span></span>
+        </a>
+        <p class="footer-tagline">
+          The open developer knowledge hub. Built with semantic HTML5, modern CSS3, and vanilla JavaScript for the 6-Week Web Development Capstone.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#features">Key Features</a></li>
+          <li><a href="#resources">Resource Catalog</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#resources" data-filter-link="frontend">Frontend Development</a></li>
+          <li><a href="#resources" data-filter-link="backend">Backend & APIs</a></li>
+          <li><a href="#resources" data-filter-link="devops">DevOps & Cloud</a></li>
+          <li><a href="#resources" data-filter-link="ai">Machine Learning</a></li>
+          <li><a href="#resources" data-filter-link="design">UI/UX Design</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Internship Details</h4>
+        <p class="footer-info-text">
+          <strong>Student:</strong> Mohit Chowdhury<br>
+          <strong>Project:</strong> Week 6 Capstone<br>
+          <strong>Status:</strong> Ready for Evaluation<br>
+          <strong>GitHub Pages:</strong> Active
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 DevPulse. Built by Mohit Chowdhury. Open Source under MIT License.</p>
+        <a href="#top" class="back-to-top-btn" title="Back to top">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Modal 1: Add New Resource Form Modal
+       ========================================================================= -->
+  <div id="submitModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>Contribute a Resource</h3>
+          <p>Add a valuable learning tool or roadmap to the community catalog</p>
+        </div>
+        <button id="closeSubmitModalBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <form id="addResourceForm" class="modal-form" novalidate>
+        <div class="form-group">
+          <label for="modalTitle" class="form-label">Resource Title *</label>
+          <input type="text" id="modalTitle" class="form-input" placeholder="e.g. Modern CSS Flexbox & Grid Guide" required>
+          <span class="field-error" id="modalTitleError"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group form-col">
+            <label for="modalCategory" class="form-label">Track / Category *</label>
+            <select id="modalCategory" class="form-input" required>
+              <option value="" disabled selected>Select Track</option>
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="devops">DevOps & Cloud</option>
+              <option value="ai">AI & ML</option>
+              <option value="design">UI/UX Design</option>
+            </select>
+            <span class="field-error" id="modalCategoryError"></span>
+          </div>
+
+          <div class="form-group form-col">
+            <label for="modalRating" class="form-label">Rating (1 to 5) *</label>
+            <input type="number" id="modalRating" class="form-input" min="1" max="5" step="0.1" value="4.9" required>
+            <span class="field-error" id="modalRatingError"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalUrl" class="form-label">Target URL / Documentation Link *</label>
+          <input type="url" id="modalUrl" class="form-input" placeholder="https://example.com/guide" required>
+          <span class="field-error" id="modalUrlError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalTags" class="form-label">Tags (comma separated)</label>
+          <input type="text" id="modalTags" class="form-input" placeholder="e.g. CSS, Flexbox, Layouts, Responsive">
+        </div>
+
+        <div class="form-group">
+          <label for="modalDescription" class="form-label">Summary / Description *</label>
+          <textarea id="modalDescription" class="form-input textarea" rows="3" placeholder="Provide a concise 1-2 sentence overview of what makes this resource worthwhile." required></textarea>
+          <span class="field-error" id="modalDescriptionError"></span>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="cancelSubmitModalBtn" class="btn btn-secondary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Publish Resource</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Modal 2: Resource Details Inspector Modal
+       ========================================================================= -->
+  <div id="detailsModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card modal-card-details">
+      <div class="modal-header">
+        <span id="detailBadge" class="track-badge">Category</span>
+        <button id="closeDetailsModalBtn" class="modal-close-btn" aria-label="Close details">✕</button>
+      </div>
+      <div class="details-body">
+        <h2 id="detailTitle" class="detail-heading">Title</h2>
+        <div class="detail-meta-bar">
+          <span id="detailRating">⭐ 5.0</span>
+          <span id="detailDate">Added recently</span>
+        </div>
+        <p id="detailDesc" class="detail-description">Description goes here</p>
+        <div class="tags-container" id="detailTags"></div>
+        <div class="detail-actions">
+          <a id="detailExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            🌐 Visit Website / Docs
+          </a>
+          <button id="detailBookmarkToggleBtn" class="btn btn-secondary">
+            🔖 Bookmark Resource
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Bookmark Side Drawer Overlay
+       ========================================================================= -->
+  <aside id="bookmarkDrawer" class="drawer-backdrop" aria-hidden="true">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <h3>🔖 Your Saved Bookmarks</h3>
+        <button id="closeDrawerBtn" class="modal-close-btn" aria-label="Close bookmarks drawer">✕</button>
+      </div>
+      <div class="drawer-body">
+        <ul id="bookmarkList" class="bookmark-list">
+          <!-- Dynamically populated via JS -->
+        </ul>
+        <div id="emptyBookmarkNotice" class="empty-drawer-notice">
+          <p>No bookmarks saved yet. Click the bookmark icon (🔖) on any resource to save it here!</p>
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <button id="clearAllBookmarksBtn" class="btn btn-secondary btn-block">Clear All Bookmarks</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       Notification Toast Container
+       ========================================================================= -->
+  <div id="toastNotificationContainer" class="toast-hub" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
