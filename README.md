@@ -2,7 +2,6 @@
 
 A fully responsive, interactive web application engineered using **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)**, deployed on **GitHub Pages**. This project represents the final capstone submission for the **6-Week Web Development Internship (Week 6 Final Project)**.
 
-- **🌐 Live Demo (GitHub Pages):** [https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/](https://mohitchowdhury-ios.github.io/INTERNOVA-Final-Project-Week6/)
 - **📁 GitHub Repository:** [https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6](https://github.com/mohitchowdhury-ios/INTERNOVA-Final-Project-Week6)
 
 ---
